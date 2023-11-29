@@ -1,4 +1,4 @@
-package com.hoya.pharmacy.api.dto;
+package com.hoya.project.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

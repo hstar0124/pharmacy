@@ -1,6 +1,6 @@
-package com.hoya.pharmacy.api.service;
+package com.hoya.project.api.service;
 
-import com.hoya.pharmacy.api.dto.KakaoApiResponseDto;
+import com.hoya.project.api.dto.KakaoApiResponseDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,8 +23,6 @@ public class KakaoAddressSearchService {
 
     @Value("${kakao.rest.api.key}")
     private String kakaoRestApiKey;
-
-
 
     public KakaoApiResponseDto requestAddressSearch(String address) {
 

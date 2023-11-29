@@ -1,4 +1,4 @@
-package com.hoya.pharmacy.api.service;
+package com.hoya.project.api.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

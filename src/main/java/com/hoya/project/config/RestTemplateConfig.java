@@ -1,4 +1,4 @@
-package com.hoya.pharmacy.config;
+package com.hoya.project.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

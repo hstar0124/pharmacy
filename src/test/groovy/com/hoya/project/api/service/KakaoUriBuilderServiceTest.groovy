@@ -1,4 +1,4 @@
-package com.hoya.pharmacy.api.service
+package com.hoya.project.api.service
 
 import spock.lang.Specification
 
