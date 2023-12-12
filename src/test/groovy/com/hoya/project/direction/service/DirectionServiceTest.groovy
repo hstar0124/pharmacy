@@ -1,6 +1,8 @@
 package com.hoya.project.direction.service
 
 import com.hoya.project.api.dto.DocumentDto
+import com.hoya.project.api.service.KakaoCategorySearchService
+import com.hoya.project.direction.repository.DirectionRepository
 import com.hoya.project.pharmacy.dto.PharmacyDto
 import com.hoya.project.pharmacy.service.PharmacySearchService
 import spock.lang.Specification
@@ -8,8 +10,13 @@ import spock.lang.Specification
 class DirectionServiceTest extends Specification {
 
     private PharmacySearchService pharmacySearchService = Mock()
+    private DirectionRepository directionRepository = Mock()
+    private KakaoCategorySearchService kakaoCategorySearchService = Mock()
+    private Base62Service base62Service = Mock()
 
-    private DirectionService directionService = new DirectionService(pharmacySearchService)
+    private DirectionService directionService = new DirectionService(
+            pharmacySearchService, directionRepository, kakaoCategorySearchService,base62Service)
+
 
     private List<PharmacyDto> pharmacyList
 
